@@ -1,0 +1,30 @@
+.header-nav-item{
+  display: inline-block;
+  margin-right: 16px;
+  img{
+    display: inline-block;
+  }
+}
+
+.locus-logo{
+  margin-right: 48px;
+  margin-left: 16px;
+}
+
+.nav-item-heading{
+  margin-left: 8px;
+  vertical-align: super;
+}
+
+.header-nav-item:hover{
+  color: #FFAF29;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+  .nav-item-heading{
+    display: none;
+  }
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+}
+
