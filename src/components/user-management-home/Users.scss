@@ -1,0 +1,25 @@
+.page-section-container{
+    background: #3F4443;
+    padding: 32px;
+}
+.page-divider{
+    margin-top: 64px;
+    clear:both;
+}
+.edit-icon{
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+}
+.edit-icon:hover{
+    background-color: lightgrey;
+    //color: #FFAF29;
+}
+.add-user-button{
+float: right;
+    margin-right: 32px;
+}
+
+.add-icon{
+   margin-right: 8px;
+}

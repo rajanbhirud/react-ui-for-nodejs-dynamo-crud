@@ -1,13 +1,13 @@
 import React from 'react';
-import './App.scss';
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
-    Link
+    Route
 } from "react-router-dom";
+
+import './App.scss';
 import Layout from "./components/common/Layout";
-import Home from "./components/home/Home";
+import UsersContainer from "./components/user-management-home/UsersContainer";
 
 class App extends React.Component{
     render() {
@@ -15,7 +15,7 @@ class App extends React.Component{
             <Router>
                 <Layout>
                     <Switch>
-                        <Route path="/" component={Home}/>
+                        <Route path="/" component={UsersContainer}/>
                     </Switch>
                 </Layout>
             </Router>

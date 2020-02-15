@@ -7,3 +7,38 @@ $mdc-theme-background: #fff;*/
 @import '@material/react-button/index.scss';
 @import '@material/react-material-icon/index.scss';
 @import '@material/react-layout-grid/index.scss';
+
+@keyframes spinner {
+  0% {
+    transform: translate3d(-50%, -50%, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(-50%, -50%, 0) rotate(360deg);
+  }
+}
+.spin::before {
+  animation: 1.5s linear infinite spinner;
+  animation-play-state: inherit;
+  border: solid 5px #cfd0d1;
+  border-bottom-color: #1c87c9;
+  border-radius: 50%;
+  content: "";
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  will-change: transform;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+.spinner-container{
+  position: relative;
+  border: 1px solid;
+  height: 50px;
+  width: 100%;
+}
